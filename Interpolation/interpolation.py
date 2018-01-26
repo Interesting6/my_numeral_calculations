@@ -7,11 +7,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-
 # 定义符号变量t
 t = Symbol("t")
-
-
 
 # 1. Lagrange插值
 def Lagrange(x,y,xi=1):
@@ -34,7 +31,6 @@ def Lagrange(x,y,xi=1):
     print("P(t)= ",func)
     print("P(xi)= ",yi)
     return func,yi
-
 
 # 用抛物线插值计算根号115
 x = [100,121,144]
@@ -248,12 +244,4 @@ for i in range(1,4):
     plt.plot(x_,sys_y,"r",label="$cos(x)$")
 plt.legend()
 plt.show()
-
-
-
-
-
-
-
-
 
